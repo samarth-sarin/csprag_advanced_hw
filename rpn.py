@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import operator
-from colorama import *
 
 
 operators = {
@@ -32,10 +31,7 @@ def calculate(myarg):
 def main():
     while True:
         result = calculate(input("rpn calc> "))
-        if (result % 2 == 0):
-            print("Result", Fore.BLUE + str(result) + Style.RESET_ALL)
-        else:
-            print("Result", Fore.RED + str(result) + Style.RESET_ALL)
+        print("Result: ", result)
 
 if __name__ == '__main__':
     main()
